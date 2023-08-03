@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+minimal_app = FastAPI()
 
 
-@app.get("/")
+@minimal_app.get("/")
 def read_root():
     return {"message": "Hello world!"}
